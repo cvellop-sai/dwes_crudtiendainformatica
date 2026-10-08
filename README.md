@@ -23,6 +23,26 @@ Sin embargo, hay formularios con rutas incorrectas y la configuración de conexi
 
 **Objetivo:** completar la aplicación web Java para ofrecer operaciones CRUD sobre fabricantes y productos almacenados en MySQL, usando la estructura existente de Servlet, DAO, modelo y JSP.
 
+### 0. Comprender y verificar las rutas iniciales
+
+Antes de implementar nuevas funcionalidades, identifica el contexto de la aplicación asignado por Tomcat al WAR. En las siguientes URLs, <contexto> es ese nombre; por ejemplo, inicialmente es crudtiendainformatica-1.0-SNAPSHOT, aunque VS Code permita configurarlo con otro valor.
+
+http://localhost:8080/<contexto>/hello-servlet
+
+Comprueba que Tomcat ha desplegado la aplicación y que responde el servlet de prueba con “Hello World!”. Está definido en HelloServlet.java.
+
+http://localhost:8080/<contexto>/fabricantes
+
+Accede al listado de fabricantes mediante FabricantesServlet.
+
+http://localhost:8080/<contexto>/fabs
+
+Accede al mismo servlet mediante una ruta alternativa. Ambas rutas están declaradas en FabricantesServlet.java.
+
+http://localhost:8080/<contexto>/
+
+Debe redirigir al listado de fabricantes mediante index.jsp.
+
 ### 1. Preparar la conexión a la base de datos
 
 * Crear la base de datos e insertar los datos iniciales ejecutando `tienda.sql`.
