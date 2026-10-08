@@ -1,4 +1,6 @@
 
+# CRUD tienda de informática
+
 El Servlet no se ejecuta directamente: hay que desplegarlo en un servidor Servlet, normalmente **Tomcat**.
 
 En `pom.xml` indica que se genera un archivo WAR: `<packaging>war</packaging>`
