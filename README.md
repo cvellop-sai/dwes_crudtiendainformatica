@@ -47,7 +47,6 @@ Antes de implementar nuevas funcionalidades, identifica el contexto de la aplica
 
 * Crear la base de datos e insertar los datos iniciales ejecutando `tienda.sql`.
 * Configurar en `database.properties` la URL, el nombre de usuario y la contraseña reales de MySQL.
-* Añadir al proyecto el conector JDBC de MySQL, ya que el código carga `com.mysql.cj.jdbc.Driver` y no aparece declarado en el `pom.xml`.
 * Comprobar que el proyecto conecta a la base tienda desde Tomcat.
 
 ### 2. Completar y probar el CRUD de fabricantes
